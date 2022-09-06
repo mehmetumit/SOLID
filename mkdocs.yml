@@ -1,0 +1,6 @@
+site_name: SOLID
+theme: windmill
+
+docs_dir: ./docs
+site_dir: ./build
+repo_url: https://github.com/mehmetumit/SOLID
