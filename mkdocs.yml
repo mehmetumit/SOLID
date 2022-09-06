@@ -2,5 +2,12 @@ site_name: SOLID
 theme: windmill
 
 docs_dir: ./docs
+nav:
+  - SingleResponsibility: SingleResponsibility/S
+  - OpenClosed: OpenClosed/O
+  - LiskovSubstitution: LiskovSubstitution/L
+  - InterfaceSegregation: InterfaceSegregation/I
+  - DependencyInversion: DependencyInversion/D
 site_dir: ./build
+site_url: https://mehmetumit.github.io/SOLID/
 repo_url: https://github.com/mehmetumit/SOLID

@@ -1,4 +1,4 @@
-# *S*ingle Responsibility Principle
+# Single Responsibility Principle
 * Her sınıf sadece tek bir işi gerçekleştirmeli. Bu şekilde yapıldığında  hataların ortaya çıkma ihtimali azaltılmış olur.
 
 ## Hatalı Örnek
