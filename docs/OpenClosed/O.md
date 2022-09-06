@@ -3,55 +3,69 @@
 
 ## Mevcut durum
 ```java
-class Car{
-	void drive();
+class Vehicle{
+	void start();
 }
 class Engine{
-	void startEngine(Car car){
-		car.drive();
+	Vehicle vehicle;
+	void startEngine(){
+		vehicle.start();
 	}
+	setVehicle(Vehicle vehicle);
+}
+```
+**Yeni Araç Eklenmek İsteniyor**
+```java
+class Airplane{
 }
 ```
 ## Hatalı Örnek
 ```java
-class Car{
-	void drive();
-}
-class Airplane{
-	void fly();
-}
-class Engine{
-	void startEngine(Object vehicle){
-		if(vehicle instanceof car){
-			car.drive();
-		}else if(vehicle instanceof airplane){
-			airplane.fly();
-		}
+
+class Vehicle{
+	void start(){
+		//Vehicle start
 	}
 }
-```
-## Düzeltilmiş Örnek
-```java
-interface Vehicle{
-	void start();
-}
-class Car implements Vehicle{
-	void drive();
-
+class Airplane extends Vehicle{
+	@Override
 	void start(){
-		drive();
-	}
-}
-class Airplane implements Vehicle{
-	void fly();
-
-	void start(){
-		fly();
+		//Airplane start
 	}
 }
 class Engine{
-	void startEngine(Vehicle vehicle){
+	Vehicle vehicle;
+	void startEngine(){
 		vehicle.start();
 	}
+	setVehicle(Vehicle vehicle);
+}
+```
+**Genişletilmeye açık olduğu için "Open" bölümünü sağlar fakat "start" methodu modifikasyona kapalı olmadığı için "Closed" bölümünü sağlamaz. İleride beklenmeyen sonuçlara yol açabilir.**
+## Düzeltilmiş Örnek
+```java
+
+class Vehicle{
+	//Final ile prensibin "Closed" kısmını sağladık
+	final void start(){
+		vehicleStart();
+	}
+	void vehicleStart(){
+		//Start vehicle
+	}
+}
+class Airplane extends Vehicle{
+	//Start methodu Override edilemez
+	//Eklenti yapılarak prensibin "Open" kısmı sağlandı
+	void vehicleStart(){
+		//Start airplane
+	}
+}
+class Engine{
+	Vehicle vehicle;
+	void startEngine(){
+		vehicle.start();
+	}
+	setVehicle(Vehicle vehicle);
 }
 ```
