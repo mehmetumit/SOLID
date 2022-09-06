@@ -22,7 +22,7 @@ class Order{
 	handleLogs(); // ❌Ekstra fonksiyonellik
 }
 ```
-## Düzeltilmiş Hali
+## Düzeltilmiş Örnek
 * Sınıfın sahip olduğu ekstra fonksiyonellik, yeni sınıflara dağıtılarak ileride yaşanabilecek hataların oluşma ihtimali azaltıldı.
 ```java
 class MailSender{
