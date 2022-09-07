@@ -1,4 +1,4 @@
-# Index
+# SOLID
 Daha iyi bir nesneye yönelik tasarım için *SOLID* tasarım prensipleri
  
 - [SingleResponsibility](SingleResponsibility/S)
