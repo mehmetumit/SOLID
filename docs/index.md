@@ -1,7 +1,8 @@
 # Index
 Daha iyi bir nesneye yönelik tasarım için *SOLID* tasarım prensipleri
-- [S](S)
-- [O](O)
-- [L](L)
-- [I](I)
-- [D](D)
+ 
+- [SingleResponsibility](SingleResponsibility/S)
+- [OpenClosed]( OpenClosed/O )
+- [LiskovSubstitution](LiskovSubstitution/L)
+- [InterfaceSegregation](InterfaceSegregation/I)
+- [DependencyInversion](DependencyInversion/D)
