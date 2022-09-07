@@ -6,7 +6,8 @@
 class CustomerDAO{
 }
 class CustomerManager{
-	CustomarDAO customerDAO;❌//Data access katmanında meydana gelen herhangi bir değişiklik Manager sınıfımıza da etki edecektir.
+//Data access katmanında meydana gelen herhangi bir değişiklik Manager sınıfımıza da etki edecektir.
+	CustomarDAO customerDAO;❌
 	void addCustomer(){
 		customerDAO.add();
 	}
