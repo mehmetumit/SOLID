@@ -1,13 +1,37 @@
 site_name: SOLID
-theme: windmill
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: red
+      accent: amber
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: red
+      accent: amber
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
 
 docs_dir: ./docs
+extra:
+  generator: false
 nav:
   - SingleResponsibility: SingleResponsibility/S
   - OpenClosed: OpenClosed/O
   - LiskovSubstitution: LiskovSubstitution/L
   - InterfaceSegregation: InterfaceSegregation/I
   - DependencyInversion: DependencyInversion/D
+
 site_dir: ./build
 site_url: https://mehmetumit.github.io/SOLID/
 repo_url: https://github.com/mehmetumit/SOLID
