@@ -11,9 +11,9 @@ class Airplane{
 }
 class Engine{
 	void startEngine(Object vehicle){
-		if(vehicle instanceof car){
+		if(vehicle instanceof Car car){
 			car.drive();
-		}else if(vehicle instanceof airplane){
+		}else if(vehicle instanceof Airplane airplane){
 			airplane.fly();
 		}
 	}
