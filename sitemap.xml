@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/DependencyInversion/D/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/InterfaceSegregation/I/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/LiskovSubstitution/L/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/OpenClosed/O/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mehmetumit.github.io/SOLID/SingleResponsibility/S/</loc>
+         <lastmod>2022-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
